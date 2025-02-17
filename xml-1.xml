@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-  <sip_accounts>
-    <sip_account>
-      <address>sip:4444@10.10.20.12</address>
-      <display_name>Test Contact4</display_name>
-    </sip_account>
-    <sip_account>
-      <address>sip:5555@10.10.20.12</address>
-      <display_name>Test Contact5</display_name>
-    </sip_account>
-  </sip_accounts>
+  <friend_list>
+    <enabled>1</enabled>
+  </friend_list>
+  <friends>
+    <friend>
+      <uri>sip:4444@10.10.20.12</uri>
+      <name>Test Contact4</name>
+    </friend>
+    <friend>
+      <uri>sip:5555@10.10.20.12</uri>
+      <name>Test Contact5</name>
+    </friend>
+  </friends>
 </config>
