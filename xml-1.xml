@@ -1,16 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <friend_list>
-    <enabled>1</enabled>
-  </friend_list>
-  <friends>
-    <friend>
-      <uri>sip:4444@10.10.20.12</uri>
-      <name>Test Contact4</name>
-    </friend>
-    <friend>
-      <uri>sip:5555@10.10.20.12</uri>
-      <name>Test Contact5</name>
-    </friend>
-  </friends>
+<config xmlns="http://www.linphone.org/xsds/lpconfig.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.linphone.org/xsds/lpconfig.xsd lpconfig.xsd">
+  <section name="friend_list">
+    <entry name="enabled" overwrite="true">1</entry>
+  </section>
+  
+  <section name="sip_accounts">
+    <entry name="account1_address">sip:4444@10.10.20.12</entry>
+    <entry name="account1_display_name">Test Contact4</entry>
+    
+    <entry name="account2_address">sip:5555@10.10.20.12</entry>
+    <entry name="account2_display_name">Test Contact5</entry>
+  </section>
 </config>
+
