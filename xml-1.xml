@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <friends>
+    <friend>
+      <uri>sip:4444@10.10.20.12</uri>
+      <name>Test Contact4</name>
+    </friend>
+    <friend>
+      <uri>sip:5555@10.10.20.12</uri>
+      <name>Test Contact5</name>
+    </friend>
+  </friends>
+</config>
