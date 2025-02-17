@@ -1,12 +1,25 @@
-<section name="sip_accounts">
-  <entry name="account1_address">sip:3312@10.10.20.12</entry>
-  <entry name="account1_display_name">Test Contact4</entry>
-  <entry name="account1_username">3312</entry>
-  <entry name="account1_password">3312</entry>
+<config xmlns="http://www.linphone.org/xsds/lpconfig.xsd" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://www.linphone.org/xsds/lpconfig.xsd lpconfig.xsd">
   
-  <entry name="account2_address">sip:3313@10.10.20.12</entry>
-  <entry name="account2_display_name">Test Contact5</entry>
-  <entry name="account2_username">3313</entry>
-  <entry name="account2_password">3313</entry>
-</section>
+  <section name="friend_list">
+    <entry name="enabled" overwrite="true">1</entry>
+  </section>
 
+  <section name="sip_accounts">
+    <entry name="account1_address">sip:4444@10.10.20.12</entry>
+    <entry name="account1_display_name">Test Contact4</entry>
+    
+    <entry name="account2_address">sip:5555@10.10.20.12</entry>
+    <entry name="account2_display_name">Test Contact5</entry>
+  </section>
+
+  <section name="contacts">
+    <entry name="contact1_number">tel:+31612345678</entry>
+    <entry name="contact1_display_name">Reg User1</entry>
+
+    <entry name="contact2_number">tel:+31612345670</entry>
+    <entry name="contact2_display_name">Reg User2</entry>
+  </section>
+
+</config>
