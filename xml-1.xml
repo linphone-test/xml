@@ -1,5 +1,5 @@
-<config xmlns="http://www.linphone.org/xsds/lpconfig.xsd" 
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<config xmlns="http://www.linphone.org/xsds/lpconfig.xsd"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.linphone.org/xsds/lpconfig.xsd lpconfig.xsd">
   
   <section name="friend_list">
@@ -7,19 +7,24 @@
   </section>
 
   <section name="sip_accounts">
-    <entry name="account1_address">sip:4444@10.10.20.12</entry>
-    <entry name="account1_display_name">Test Contact4</entry>
+    <entry name="account1_address" overwrite="true">sip:4444@10.10.20.12</entry>
+    <entry name="account1_display_name" overwrite="true">Test Contact4</entry>
     
-    <entry name="account2_address">sip:5555@10.10.20.12</entry>
-    <entry name="account2_display_name">Test Contact5</entry>
+    <entry name="account2_address" overwrite="true">sip:5555@10.10.20.12</entry>
+    <entry name="account2_display_name" overwrite="true">Test Contact5</entry>
   </section>
 
   <section name="contacts">
-    <entry name="contact1_number">tel:+31612345678</entry>
-    <entry name="contact1_display_name">Reg User1</entry>
+    <entry name="contact1_number" overwrite="true">tel:+31612345678</entry>
+    <entry name="contact1_display_name" overwrite="true">Reg User1</entry>
 
-    <entry name="contact2_number">tel:+31612345670</entry>
-    <entry name="contact2_display_name">Reg User2</entry>
+    <entry name="contact2_number" overwrite="true">tel:+31612345670</entry>
+    <entry name="contact2_display_name" overwrite="true">Reg User2</entry>
   </section>
 
+  <!-- Enable one-time provisioning (the changes will be applied only once) -->
+  <section name="misc">
+    <entry name="transient_provisioning" overwrite="true">1</entry>
+  </section>
 </config>
+
